@@ -7,16 +7,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{% block title %}New App{% endblock %}</title>
+        <title>
+            {% block title %}
+                New App
+            {% endblock %}
+        </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <div>
-        {% block content %}
+        <div class="sidenav">
+            <a href="/">Home</a>
+            <a href="/create">Create</a>
+            
+        </div>
+        <div id="content">
+            {% block content %}
 
-        {% endblock%}
+            {% endblock%}
         </div>
         
         <script src="" async defer></script>
